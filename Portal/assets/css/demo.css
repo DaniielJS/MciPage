@@ -60,394 +60,50 @@
 
 
   26.33334% {
-    background-image: url(images/03.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(-17.5%, 17.5%, 0);
             transform: translate3d(-17.5%, 17.5%, 0);
     opacity: 0; }
 
   39.5% {
-    background-image: url(images/03.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(-8.25%, 8.25%, 0);
             transform: translate3d(-8.25%, 8.25%, 0);
     opacity: 1; }
 
   53.66667% {
-    background-image: url(images/03.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1; }
 
   67.82333% {
-    background-image: url(images/03.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(8.25%, -8.25%, 0);
             transform: translate3d(8.25%, -8.25%, 0);
     opacity: 0; }
 
 
   67.82334% {
-    background-image: url(images/04.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(17.5%, 17.5%, 0);
             transform: translate3d(17.5%, 17.5%, 0);
     opacity: 0; }
 
   81% {
-    background-image: url(images/04.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(8.25%, 8.25%, 0);
             transform: translate3d(8.25%, 8.25%, 0);
     opacity: 1; }
 
   94.16667% {
-    background-image: url(images/04.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1; }
 
   100% {
-    background-image: url(images/04.jpg);
+    background-image: url(images/02.jpg);
     -webkit-transform: translate3d(-8.25%, -8.25%, 0);
             transform: translate3d(-8.25%, -8.25%, 0);
     opacity: 0; }
-
-
-/*
-  33.33333% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(32.5%, -32.5%, 0);
-            transform: translate3d(32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  37.5% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  41.66667% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  45.82333% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 0; }
-
-
-
-  45.83333% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(-32.5%, -32.5%, 0);
-            transform: translate3d(-32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  50% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  54.16667% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  58.32333% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 0; }
-
-
-
-  58.33333% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(-32.5%, 32.5%, 0);
-            transform: translate3d(-32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  62.5% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  66.66667% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  70.82333% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 0; }
-
-
-
-  70.83333% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(32.5%, 32.5%, 0);
-            transform: translate3d(32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  75% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  79.16667% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  83.32333% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 0; }
-
-
-
-  83.33333% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(32.5%, -32.5%, 0);
-            transform: translate3d(32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  87.5% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  91.66667% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  95.82333% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 0; }
-
-
-
-  95.83333% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(-32.5%, -32.5%, 0);
-            transform: translate3d(-32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  100% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 1; } }
-
-@keyframes hubble {
-  0 {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  4.16667% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  8.32333% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 0; }
-
-  8.33333% {
-    background-image: url(images/03.jpg);
-    -webkit-transform: translate3d(-32.5%, 32.5%, 0);
-            transform: translate3d(-32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  32.5% {
-    background-image: url(images/03.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  16.66667% {
-    background-image: url(images/03.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  20.82333% {
-    background-image: url(images/03.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 0; }
-
-  20.83333% {
-    background-image: url(images/04.jpg);
-    -webkit-transform: translate3d(32.5%, 32.5%, 0);
-            transform: translate3d(32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  25% {
-    background-image: url(images/04.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  29.16667% {
-    background-image: url(images/04.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  33.32333% {
-    background-image: url(images/04.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 0; }
-
-  33.33333% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(32.5%, -32.5%, 0);
-            transform: translate3d(32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  37.5% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  41.66667% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  45.82333% {
-    background-image: url(images/05.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 0; }
-
-  45.83333% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(-32.5%, -32.5%, 0);
-            transform: translate3d(-32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  50% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  54.16667% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  58.32333% {
-    background-image: url(images/lincoln-1.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 0; }
-
-  58.33333% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(-32.5%, 32.5%, 0);
-            transform: translate3d(-32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  62.5% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  66.66667% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  70.82333% {
-    background-image: url(images/lincoln-2.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 0; }
-
-  70.83333% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(32.5%, 32.5%, 0);
-            transform: translate3d(32.5%, 32.5%, 0);
-    opacity: 0; }
-
-  75% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(16.25%, 16.25%, 0);
-            transform: translate3d(16.25%, 16.25%, 0);
-    opacity: 1; }
-
-  79.16667% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  83.32333% {
-    background-image: url(images/lincoln-3.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 0; }
-
-  83.33333% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(32.5%, -32.5%, 0);
-            transform: translate3d(32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  87.5% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(16.25%, -16.25%, 0);
-            transform: translate3d(16.25%, -16.25%, 0);
-    opacity: 1; }
-
-  91.66667% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1; }
-
-  95.82333% {
-    background-image: url(images/lincoln-4.jpg);
-    -webkit-transform: translate3d(-16.25%, 16.25%, 0);
-            transform: translate3d(-16.25%, 16.25%, 0);
-    opacity: 0; }
-
-  95.83333% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(-32.5%, -32.5%, 0);
-            transform: translate3d(-32.5%, -32.5%, 0);
-    opacity: 0; }
-
-  100% {
-    background-image: url(images/02.jpg);
-    -webkit-transform: translate3d(-16.25%, -16.25%, 0);
-            transform: translate3d(-16.25%, -16.25%, 0);
-    opacity: 1; } }
-*/
