@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main-family{
-	font-family: 'Limelight', cursive;
+	font-family: 'Caviar Dreams', cursive;
 }
 
 .sub-family{
@@ -178,11 +178,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header .top.solid {
-    background: #4267b2;
+    background: #02030c;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+span{
+	font-family: Caviar Dreams;
+	font-size: 1.5em;
+}
+.size15{
+	font-size: 1.3em !important;
+}
 #header .top h1{
 	margin-bottom: 0;
 }
@@ -201,16 +207,25 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .slogan{
-	font-size: 3em;
+	font-size: 5.5em;
 	margin-bottom: 15px;
 	line-height: 1em;
 	font-family: 'Nixie One';
 	color: black;
-	text-align:center
+	text-align:center;
+}
+.highTide{
+	font-family: High Tide;
+}
+.caviarDreams{
+	font-family: Caviar Dreams;
 }
 .creamColor{
 	color: #ffe7a2;
 	background: transparent;
+}
+.witheColor{
+	color: white;
 }
 .secondary-slogan{
 	font-size: 1.6em;
@@ -596,5 +611,17 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
+.titleSection{
+	font-size: 2.7em;
+}
 
+@font-face {
+font-family: "High Tide";
+src: url("../fonts/High Tide - Demo.ttf");
+}
+
+@font-face {
+font-family: "Caviar Dreams";
+src: url("../fonts/CaviarDreams.ttf");
+}
 /*panini*/
