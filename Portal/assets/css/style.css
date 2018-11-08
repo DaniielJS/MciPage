@@ -685,7 +685,8 @@ src: url("../fonts/CaviarDreams.ttf");
   padding: 2rem;
   /* border-radius: 0.25rem; */
   /*border: 1px solid #969696;*/
-  background: #fff;
+  background: black;
+  color: white;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.3);
   height: 95%;
   opacity: 0;
@@ -781,4 +782,8 @@ body { font-family: sans-serif; }
 .grid-item img {
   display: block;
   max-width: 100%;
+}
+
+.margin-bottom{
+  margin-bottom: 30px;  
 }
