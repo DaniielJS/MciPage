@@ -192,6 +192,9 @@ span{
 .size25{
 	font-size: 1.3em !important;
 }
+.piuraBackground{
+	background-image: url("../../assets/images/piura.png");
+}
 #header .top h1{
 	margin-bottom: 0;
 }
