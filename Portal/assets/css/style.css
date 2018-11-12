@@ -63,7 +63,7 @@ a {
 }
 
 a{	
-	color: black;
+	color: white;
 	-o-transition: all .4s;
 	-ms-transition: all .4s;
 	-moz-transition: all .4s;
@@ -186,6 +186,9 @@ span{
 	font-family: Caviar Dreams;
 	font-size: 1.5em;
 }
+.size35 {
+    font-size: 3.3em !important;
+}
 .size15{
 	font-size: 1.3em !important;
 }
@@ -233,13 +236,24 @@ span{
 .witheColor{
 	color: white;
 }
+.blackColor{
+    color: black;
+}
+.sizeHeight270{
+height: 270px;
+}
+.blackBackground{
+    background: black;
+}
 .secondary-slogan{
 	font-size: 1.6em;
 	color: rgba(0,0,0,.5);
 	line-height: 1em;
 	font-family: 'Alegreya SC';
 }
-
+.padding25{
+    padding: 45px;
+}
 #header .bottom {
     bottom: 10%;
 	display: block;
@@ -287,17 +301,18 @@ span{
     top: 0;
     bottom: 0;
     margin-right: -300px;
-    background: #ffffff;
+    background: black;
     width: 300px;
     padding: 20px;
     z-index: 999;
 }
 
-#drawer-right h1, #drawer-right h2{color: #000000;}
+#drawer-right h1, #drawer-right h2{color: white;}
 
 #drawer-right .nav-pills>li>a {
 	font-size: 18px;
-	border-radius: 0;
+    border-radius: 0;
+    color: white;
 }
 
 #drawer-right .social{margin-top: 30px}

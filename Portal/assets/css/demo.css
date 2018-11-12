@@ -60,50 +60,50 @@
 
 
   26.33334% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/03.jpg);
     -webkit-transform: translate3d(-17.5%, 17.5%, 0);
             transform: translate3d(-17.5%, 17.5%, 0);
     opacity: 0; }
 
   39.5% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/03.jpg);
     -webkit-transform: translate3d(-8.25%, 8.25%, 0);
             transform: translate3d(-8.25%, 8.25%, 0);
     opacity: 1; }
 
   53.66667% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/03.jpg);
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1; }
 
   67.82333% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/03.jpg);
     -webkit-transform: translate3d(8.25%, -8.25%, 0);
             transform: translate3d(8.25%, -8.25%, 0);
     opacity: 0; }
 
 
   67.82334% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/04.jpg);
     -webkit-transform: translate3d(17.5%, 17.5%, 0);
             transform: translate3d(17.5%, 17.5%, 0);
     opacity: 0; }
 
   81% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/04.jpg);
     -webkit-transform: translate3d(8.25%, 8.25%, 0);
             transform: translate3d(8.25%, 8.25%, 0);
     opacity: 1; }
 
   94.16667% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/04.jpg);
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1; }
 
   100% {
-    background-image: url(images/02.jpg);
+    background-image: url(images/04.jpg);
     -webkit-transform: translate3d(-8.25%, -8.25%, 0);
             transform: translate3d(-8.25%, -8.25%, 0);
     opacity: 0; }
