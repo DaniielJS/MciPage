@@ -44,7 +44,7 @@
 						<a href="#wrapper"><i class="fa fa-gift"></i> Proximos Eventos</a>
 					</li>
 					<li>
-						<a href="#portfolio"><i class="fa fa-book"></i> Predicas en Audio</a>
+						<a href="avsound.mciaguaviva.com"><i class="fa fa-book"></i> Predicas en Audio</a>
 					</li>
 					<li>
 						<a href="#services"><i class="fa fa-caret-square-o-right"></i> Ofrendas</a>
@@ -183,12 +183,12 @@
 						<div class="row">
 							<div class="col-sm-2"></div>
 							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/aqp.png)">
+								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/aqp.png)">
 									<span class="size15 btn btn-o-white">Arequipa</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/puno.png)">
+								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/puno.png)">
 									<span class="size15 btn btn-o-white">Puno</span>
 								</a>
 							</div>
@@ -196,17 +196,17 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/tacna.png)">
+								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/tacna.png)">
 									<span class="btn btn-o-white size15">Tacna</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/lima.png)">
+								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/lima.png)">
 									<span class="size15 btn btn-o-white">Lima</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="piura.html" class="recent-work" style="background-image:url(assets/images/piura.png)">
+								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/piura.png)">
 									<span class="size15 btn btn-o-white">Piura</span>
 								</a>
 							</div>
@@ -373,7 +373,7 @@
 					<div class="grid-item">
 						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
 					</div>
-					<div class="grid-item">
+					<!-- <div class="grid-item">
 						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
 					</div>
 					<div class="grid-item">
@@ -384,7 +384,7 @@
 					</div>
 					<div class="grid-item">
 						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-					</div>
+					</div> -->
 				</div>
 	
 					<!-- <section class="block-body">
@@ -513,27 +513,16 @@
 						<div class="row text-center">
 							<div class="col-md-4"></div>
 							<div class="col-md-4 caviarDreams size15"><a  target="_blank" href="https://open.spotify.com/album/4TudltbQejn9Bl9BjVBfXA" class="btn btn-o-white btn-lg">Escuchar</a></div>
-							<div class="col-md-4"><fb:login-button 
-								scope="public_profile,email"
-								onlogin="checkLoginState();">
-							  </fb:login-button></div>				
+							<div class="col-md-4"></div>				
 						</div>
 					</div>
 		</div>
 	</div>
-	<fb:login-button 
-								scope="public_profile,email"
-								onlogin="checkLoginState();">
-							  </fb:login-button>
+	
 <script>
-	function checkLoginState() {
-		FB.getLoginStatus(function(response) {
-			statusChangeCallback(response);
-		});
-	}
 		window.fbAsyncInit = function() {
 		  FB.init({
-			appId      : '738075919545544',
+			appId      : '513454769135233',
 			cookie     : true,
 			xfbml      : true,
 			version    : 'v3.2'
@@ -541,14 +530,6 @@
 			
 		  FB.AppEvents.logPageView();   
 			
-		  	FB.api('738075919545544' + '/?fields=photos.limit(10){picture,images}', response => {
-				console.log(response);
-			});
-
-			
-			FB.getLoginStatus(function(response) {
-				statusChangeCallback(response);
-			});
 		};
 	  
 		(function(d, s, id){
@@ -558,8 +539,5 @@
 		   js.src = "https://connect.facebook.net/en_US/sdk.js";
 		   fjs.parentNode.insertBefore(js, fjs);
 		 }(document, 'script', 'facebook-jssdk'));
-
-		 
-
 	  </script>
 </html>
