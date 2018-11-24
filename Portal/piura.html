@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mision Piura</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+    <link rel="stylesheet" href="assets/css/demo.css" media="screen"/>
+</head>
+<body>
+  <div class="piuraBackground" style="height:100vh;">
+      <div class="container-fluid">
+          <nav class="top clearfix navbar navbar-expand-lg navbar-dark">
+                  <img class="image-logo-responsive img-fluid" src="assets/images/main_logo.png">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          </nav>    
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center caviarDreams witheColor size35">Misión <mark class="creamColor">Piura</mark></div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 text-center"> 
+              <div class="row">                
+                <div class="col-sm-6">                               
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/juan.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Pastores Juan y Paula</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="index.html" class="btn btn-primary">Volver</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/images/juan.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Pastores Juan y Paula</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="index.html" class="btn btn-primary">Volver</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6" id="map">
+
+            </div>
+          </div>              
+    </div>
+  </div>
+        
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvBmSj628sI22u195YT96I4hUd18Vyh8g&callback=initMap" async defer></script>
+<script>
+  var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.5293101, lng: -5.6773233},
+          zoom: 13
+        });
+      }
+</script>
+</html>

@@ -44,7 +44,7 @@
 						<a href="#wrapper"><i class="fa fa-gift"></i> Proximos Eventos</a>
 					</li>
 					<li>
-						<a href="avsound.mciaguaviva.com"><i class="fa fa-book"></i> Predicas en Audio</a>
+						<a href="#portfolio"><i class="fa fa-book"></i> Predicas en Audio</a>
 					</li>
 					<li>
 						<a href="#services"><i class="fa fa-caret-square-o-right"></i> Ofrendas</a>
@@ -143,7 +143,7 @@
 						        <a class="nav-link" href="#misiones">Misiones</a>
 						      </li>
 						      <li class="nav-item">
-						        <a class="nav-link" href="#reuniones">Reuniones</a>
+						        <a class="nav-link" href="#">Novedades</a>
 						      </li>
 						      <li class="nav-item">
 						        <a class="nav-link" href="#">Contactanos</a>
@@ -183,12 +183,12 @@
 						<div class="row">
 							<div class="col-sm-2"></div>
 							<div class="col-sm-4">
-								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/aqp.png)">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/aqp.png)">
 									<span class="size15 btn btn-o-white">Arequipa</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/puno.png)">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/puno.png)">
 									<span class="size15 btn btn-o-white">Puno</span>
 								</a>
 							</div>
@@ -196,17 +196,17 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-4">
-								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/tacna.png)">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/tacna.png)">
 									<span class="btn btn-o-white size15">Tacna</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/lima.png)">
+								<a href="#" class="recent-work" style="background-image:url(assets/images/lima.png)">
 									<span class="size15 btn btn-o-white">Lima</span>
 								</a>
 							</div>
 							<div class="col-sm-4">
-								<a href="misiones.html" class="recent-work" style="background-image:url(assets/images/piura.png)">
+								<a href="piura.html" class="recent-work" style="background-image:url(assets/images/piura.png)">
 									<span class="size15 btn btn-o-white">Piura</span>
 								</a>
 							</div>
@@ -359,20 +359,32 @@
 			<div class="grid">
 					<div class="grid-sizer"></div>
 					<div class="grid-item">
-						<img src="assets/images/danza_m.jpg" />
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
 					</div>
 					<div class="grid-item">
-						<img src="assets/images/niños_m.jpg" />
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
 					</div>
 					<div class="grid-item">
-						<img src="assets/images/manos_m.jpg" />
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
 					</div>
 					<div class="grid-item">
-						<img src="assets/images/ugieres_m.jpg" />
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
 					</div>
 					<div class="grid-item">
-						<img src="assets/images/alabanza.jpg" />
-					</div>					
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+					</div>
+					<div class="grid-item">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+					</div>
+					<div class="grid-item">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+					</div>
+					<div class="grid-item">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+					</div>
+					<div class="grid-item">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+					</div>
 				</div>
 	
 					<!-- <section class="block-body">
@@ -406,7 +418,7 @@
 				</div>
 			</div><!-- /#testimonials -->
 
-			<div class="content-block parallax" id="reuniones">
+			<div class="content-block parallax" id="parallax">
 					<div class="container text-center">
 						<p class="titleSection caviarDreams">Te invitamos a participar de nuestras</p>
 						<p class="titleSection caviarDreams">REUNIONES</p>
@@ -510,7 +522,7 @@
 <script>
 		window.fbAsyncInit = function() {
 		  FB.init({
-			appId      : '513454769135233',
+			appId      : '738075919545544',
 			cookie     : true,
 			xfbml      : true,
 			version    : 'v3.2'
@@ -518,6 +530,9 @@
 			
 		  FB.AppEvents.logPageView();   
 			
+		  FB.api('738075919545544' + '/?fields=photos.limit(10){picture,images}', response => {
+			console.log(response);
+		});
 		};
 	  
 		(function(d, s, id){
@@ -527,5 +542,8 @@
 		   js.src = "https://connect.facebook.net/en_US/sdk.js";
 		   fjs.parentNode.insertBefore(js, fjs);
 		 }(document, 'script', 'facebook-jssdk'));
+
+		 
+
 	  </script>
 </html>
