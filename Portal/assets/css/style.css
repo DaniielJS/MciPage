@@ -193,10 +193,34 @@ span{
 	font-size: 1.3em !important;
 }
 .size25{
-	font-size: 1.3em !important;
+	font-size: 2.3em !important;
+}
+.danzaBackground{
+	background-image: url("../../assets/images/danza_m.jpg");
+}
+.alabanzaBackground{
+	background-image: url("../../assets/images/alabanza.jpg");
+}
+.niñosBackground{
+	background-image: url("../../assets/images/niños_m.jpg");
+}
+.ugieresBackground{
+	background-image: url("../../assets/images/ugieres_m.jpg");
 }
 .piuraBackground{
 	background-image: url("../../assets/images/piura.png");
+}
+.punoBackground{
+	background-image: url("../../assets/images/puno.png");
+}
+.limaBackground{
+	background-image: url("../../assets/images/lima.png");
+}
+.tacnaBackground{
+	background-image: url("../../assets/images/tacna.png");
+}
+.aqpBackground{
+	background-image: url("../../assets/images/aqp.png");
 }
 #header .top h1{
 	margin-bottom: 0;
@@ -242,8 +266,14 @@ span{
 .sizeHeight270{
 height: 270px;
 }
+.sizeHeight600{
+    height: 600px!important;
+    }
 .blackBackground{
     background: black;
+}
+.whiteBackground{
+    background: white;
 }
 .secondary-slogan{
 	font-size: 1.6em;
@@ -381,7 +411,7 @@ height: 270px;
 
 .recent-work {
     width: 100%;
-    padding-bottom: 27%;
+    padding-bottom: 23%;
     background: #C3C9CC;
     display: table;
     text-align: center;
