@@ -198,11 +198,17 @@ span{
 .size35 {
     font-size: 3.3em !important;
 }
+.size17{
+	font-size: 1.7em !important;
+}
 .size15{
 	font-size: 1.3em !important;
 }
 .size07{
 	font-size: 0.7em !important;
+}
+.size05{
+	font-size: 0.5em !important;
 }
 .size02{
 	font-size: 0.2em !important;
@@ -856,3 +862,18 @@ body { font-family: sans-serif; }
 .margin-bottom{
   margin-bottom: 30px;  
 }
+
+@media screen and (max-width: 400px) {
+    .image-logo-responsive {
+        height: 40px;
+        width: 70%;
+    }    
+    .slogan {
+        font-size: 3.5em;
+        margin-bottom: 15px;
+        line-height: 1em;
+        font-family: 'Nixie One';
+        color: black;
+        text-align: center;
+    }
+  }
