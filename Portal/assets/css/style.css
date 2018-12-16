@@ -101,6 +101,15 @@ h1, h2, h3, h4, h5, h6{
     color: #6a6a6a;
 }
 
+.btn.btn-o-black {
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+}
+.btn.btn-o-black:hover {
+    background: transparent;
+    color: #6a6a6a;
+}
 
 /*////////////////////////////////////////////////////////////////////////
 //  02 - Header
@@ -192,8 +201,17 @@ span{
 .size15{
 	font-size: 1.3em !important;
 }
+.size07{
+	font-size: 0.7em !important;
+}
+.size02{
+	font-size: 0.2em !important;
+}
 .size25{
 	font-size: 2.3em !important;
+}
+.maxWidth50{
+    max-width: 50%;
 }
 .danzaBackground{
 	background-image: url("../../assets/images/danza_m.jpg");
@@ -221,6 +239,9 @@ span{
 }
 .aqpBackground{
 	background-image: url("../../assets/images/aqp.png");
+}
+.aviKidsBackground{
+    background-image: url("../../assets/images/fondo_avi.jpg");
 }
 #header .top h1{
 	margin-bottom: 0;

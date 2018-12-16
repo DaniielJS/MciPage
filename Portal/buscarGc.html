@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" media="screen"/>
     <link rel="stylesheet" href="assets/css/demo.css" media="screen"/>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
 </head>
 <style type="text/css">
 body {
-  background: url('assets/images/fondo_buscador.JPG') no-repeat center center fixed;
+  background: url('assets/images/fondo_conexion.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -24,7 +25,52 @@ body {
 }
 </style>
 <body>
-      <section>
+      <!-- main page -->
+      <div class="container">
+          <div class="overflow-hidden">
+              <div class="flex flex-center white" style="min-height:100vh">
+                <div class="center padding25">
+                  <section class="text-left">
+                <div class="slogan">
+                  <div class="font-weight main-family row">
+                    <div class="col witheColor"> <p class="size07">GRUPOS DE</p><p class="highTide size15">Conexion</p></div>                    
+                  </div>
+                  <div class="font-weight main-family row">
+                    <div class="col witheColor">
+                        <p class="witheColor size02">Nuestra mision fue fundada el año 2013 celebrando este proximo 2018 su 5 aniversario. </p>
+                    </div>
+                  </div>
+                  <div class="font-weight main-family row flex flex-center">
+                      <div class="col witheColor center">
+                             <div class="row">
+                                <div class="col-sm-4"></div>
+                               <div class="col-sm-4">
+                                  <div class="form-group">                                
+                                      <input type="text" class="form-control size02" >                                
+                                    </div>
+                               </div>
+                               <div class="col-sm-4"></div>
+                             </div>
+                             <div class="row">
+                                <div class="col-sm-4"></div>
+                               <div class="col-sm-4">
+                                  <div class="form-group">                                
+                                      <a href="#" id="searchButton" class="btn btn-o-white btn-lg">Buscar</a>                            
+                                    </div>
+                               </div>
+                               <div class="col-sm-4"></div>
+                             </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- buscador -->
+      <section id="search">
       <div class="container">
         <div class="row padding25">
           <div class="row">
@@ -122,5 +168,7 @@ body {
       </div>
     </section>
 </body>
-
+<script>
+$("#search").hide();
+</script>
 </html>
