@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css" media="screen"/>
     <link rel="stylesheet" href="assets/css/demo.css" media="screen"/>
     <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
 </head>
 <style type="text/css">
 body {
@@ -24,12 +25,12 @@ body {
   -o-background-size: cover;
 }
 </style>
-<body>
+<body ng-app="grupos" ng-controller="conexion">
       <!-- main page -->
-      <div class="container">
+      <div class="container" >
           <div class="overflow-hidden">
-              <div class="flex flex-center white" style="min-height:100vh">
-                <div class="center padding25">
+              <div class="flex flex-center white">
+                <div class="center padding10">
                   <section class="text-left">
                 <div class="slogan">
                   <div class="font-weight main-family row">
@@ -37,7 +38,7 @@ body {
                   </div>
                   <div class="font-weight main-family row">
                     <div class="col witheColor">
-                        <p class="witheColor size02">Nuestra mision fue fundada el año 2013 celebrando este proximo 2018 su 5 aniversario. </p>
+                        <p class="witheColor size02">Hay un grupo de conexión cerca esperando por ti. </p>
                     </div>
                   </div>
                   <div class="font-weight main-family row flex flex-center">
@@ -46,19 +47,15 @@ body {
                                 <div class="col-sm-4"></div>
                                <div class="col-sm-4">
                                   <div class="form-group">                                
-                                      <input type="text" class="form-control size02" >                                
+                                      <input ng-model="busquedaGrupo" type="text" class="form-control size02" placeholder="Busca por lider, ciudad ...">                                
                                     </div>
                                </div>
                                <div class="col-sm-4"></div>
                              </div>
                              <div class="row">
-                                <div class="col-sm-4"></div>
-                               <div class="col-sm-4">
-                                  <div class="form-group">                                
-                                      <a href="#" id="searchButton" class="btn btn-o-white btn-lg">Buscar</a>                            
-                                    </div>
-                               </div>
-                               <div class="col-sm-4"></div>
+                                <div class="col-sm-12">
+
+                                </div>
                              </div>
                       </div>
                   </div>
@@ -70,95 +67,29 @@ body {
       </div>
 
       <!-- buscador -->
-      <section id="search">
+      <section id="searchs">
       <div class="container">
-        <div class="row padding25">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="form-group">
-                  <p class="caviarDreams witheColor">Elige tu Ciudad</p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="form-group">                    
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Puno</option>
-                        <option>Arequipa</option>
-                        <option>Tacna</option>
-                        <option>Piura</option>
-                        <option>Lima</option>
-                      </select>
-                  </div>                   
-            </div>
-            <div  class="col-lg-5">
-                <div class="form-group">                    
-                    <input type="text" class="form-control mw-100" placeholder="Buscar por horario, dia o dirección">
-                  </div>
-            </div>
-            <div  class="col-lg-2">
-                <p><a href="index.html"><span class="btn btn-o-white size15">Volver</span></a></p>
-            </div>
-          </div>
+        <div class="row padding10">
           <div class="col-lg-12 whiteBackground">
             <table class="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Lider</th>
                   <th scope="col">Ciudad</th>
+                  <th scope="col">Lider</th>
                   <th scope="col">Dirección</th>
-                  <th scope="col">Horario</th>
+                  <th scope="col">Dia</th>
+                  <th scope="col">Hora</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Luchito</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Cinthia</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Hugo</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
+                <tr ng-repeat="grupo in grupos  | filter:busquedaGrupo">                  
+                  <th>{{$index + 1}}</th>
+                  <td>{{grupo[0]}}</td>
+                  <td>{{grupo[1]}}</td>
+                  <td>{{grupo[2]}}</td>
+                  <td>{{grupo[3]}}</td>
+                  <td>{{grupo[4]}}</td>
                 </tr>
               </tbody>
             </table>
@@ -169,6 +100,47 @@ body {
     </section>
 </body>
 <script>
-$("#search").hide();
+var app = angular.module("grupos", []); 
+app.controller("conexion", function($scope) {
+    $scope.grupos = [["Arequipa","CINTHYA QUISPE","COOP. VICTOR ANDRES BELAUNDE F-5 YANAHUARA","JUEVES","5:00 p. m.",],
+["Arequipa","LUIS CACERES & YESSY GUILLEN","AV. VENEZUELA # 306 2DO PISO – CERCADO","JUEVES","7:00 p. m.",],
+["Arequipa","ROXANA CHAVEZ MELGARJE","REPUBLICA DE CHILE #216 ALTO SAN MARTIN – MNO MELGAR","JUEVES","6:30 p. m.",],
+["Arequipa","ROLANDO VARGAS","CALLE ITALIA #911 – B HUNTER","JUEVES","8:00 p. m.",],
+["Arequipa","CRYSTHIAN SERRUTO OCHOA","COOP. DANIEL ALCIDES CARRION G-20","JUEVES","7:00 p. m.",],
+["Arequipa","ROXANA CASTILLO DE LA FLOR","AV. VENEZUELA # 606 – CERCADO","JUEVES","6:30 p. m.",]
+["Puno","CORNEJO ARAPA GABIN","JR AREQUIPA 13","JUEVE","5:00 p. m."],
+["Puno","PAREDES VILLAGRA CARL","JR AREQUIPA 13","LUNE","7:00 p. m."],
+["Puno","PANCCA QUISPE HILD","AV. FLORAL 45","JUEVE","7:00 p. m."],
+["Puno","PACO FLORES JOE","JR LOS INCAS 344 ","LUNE","8:30 p. m."],
+["Puno","HILASACA PAUCARA OLG","JR LOS INCAS 52","JUEVE","8:20 p. m."],
+["Puno","AGUILAR CHUQUIMIA WILLY Y ESPOS","URB MANTO 2000 MZ 5 LT 1","VIERNE","7:00 p. m."],
+["Puno","QUIZA VILCA PS ROLAND","JR CAHUIDE 226 – 3CER PIS","JUEVE","7:30 p. m."],
+["Puno","TICONA MAQUERA YANET","JR ZEPITA 12","JUEVE","7:00 p. m."],
+["Puno","RODRIGUEZ RAMOS YOVANA SAND","JR ANDAHUAYLAS 18","JUEVE","7:00 p. m."],
+["Puno","AYAMAMANI CONDORI ANDRE","URB CHANU CHANU 2 ETAPA MZ B-1 LOTE ","JUEVE","7:00 p. m."],
+["Puno","TICONA MAQUERA DIAN","JR ZEPITA 12","JUEVE","5:00 p. m."],
+["Puno","FLORES FLORES WAGNE","JR ECHENIQUE 354 3CER PIS","JUEVE","7:30 p. m."],
+["Puno","CHURA CHUQUIÑA EDUARD","JR BENJAMIN PACHECO VARGAS 15","JUEVE","7:00 p. m."],
+["Puno","VALDEZ FLORES ELEAZA","CENTRO COMERCIAL PLAZA STAND 12","JUEVE","8:00 p. m."]
+
+
+["Lima","CARLOS AIQUIPA LUPU","URB EL DORAL DE TORRE BLANCA MZ 43 LOT 33 - CARABAYLLO","JUEVES","8:00 p. m."],
+["Lima","FIORELLA MAZA","Jr. Mochicas 470 La Victoria","JUEVES","8:00 p. m."],
+
+
+["Piura","JUANA FARFÁN","AV .SAN MARTÍN 1200","JUEVES","6:30 p. m."],
+["Piura","JUANA ROSA MAZA","AV.SAN MARTÍN 1320","JUEVES","5:00 p. m."],
+
+
+
+["Tacna","Luis y Graciela ","EI olivar mz 15 lote 20 CPM Leguía","JUEVES","7:00 p. m."],
+["Tacna","Claudia Aguirre ","Calle 28 de julio 310","JUEVES","7:00 p. m."],
+["Tacna","Dina cohaila","Pasaje Santo Domingo 1474-B Centro Poblado La Esperanza. Alto de la Alianza","JUEVES","7:00 p.m."],
+["Tacna","Cintia tuesta","Asoc. Gregorio albarracin mz A lote ","JUEVES","7:00 p. m."],
+["Tacna","Rosa Changano","Pasaje México 380","JUEVES","7:00 p. m."],
+["Tacna","Psa. Merida Serruto","Cecoavi Parcela 1","JUEVES","7:00 p. m."],
+["Tacna","Nancy Delgado","Pago Silpay Cono Sur Mz B Lote 12","JUEVES","6:00 p. m."],
+];
+});
 </script>
 </html>
