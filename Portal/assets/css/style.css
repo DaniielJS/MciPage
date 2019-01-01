@@ -61,7 +61,9 @@ a {
 	text-decoration: none;
 	outline: none;
 }
-
+.inherit{
+    font-family: inherit;
+}
 a{	
 	color: white;
 	-o-transition: all .4s;
@@ -105,12 +107,25 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid black;
     color: black;
     background: transparent;
+    font-weight: 700;
 }
 .btn.btn-o-black:hover {
     background: black;
     color: white;
+    font-weight: 600;
 }
-
+.btn.btn-o-black-static {
+    background: black;
+    color: white;
+    font-weight: 600;
+}
+.brigth{
+    font-weight: 700;
+}
+.noMarginNoPadding{
+    padding: 0px;
+    margin: 0px;
+}
 /*////////////////////////////////////////////////////////////////////////
 //  02 - Header
 ///////////////////////////////////////////////////////////////////////*/
@@ -195,8 +210,23 @@ span{
 	font-family: Caviar Dreams;
 	font-size: 1.5em;
 }
+.hide{
+    visibility: none;
+    display: none;
+}
+.mainPageDescription{
+    color: black;
+    font-weight: 700;
+}
+.mainWhitePageDescription{
+    color: white;
+    font-weight: 700;
+}
 .padding25{
     padding: 45px;
+}
+.paddingVertical90{
+    padding: 20px 20px 22px 104px;
 }
 .padding10{
     padding: 10px;
@@ -207,14 +237,29 @@ span{
 .size17{
 	font-size: 1.7em !important;
 }
+.size11{
+	font-size: 1.1em !important;
+}
+.size12{
+	font-size: 1.2em !important;
+}
 .size15{
 	font-size: 1.3em !important;
+}
+.size14{
+	font-size: 1.4em !important;
+}
+.size16{
+	font-size: 1.5em !important;
 }
 .size07{
 	font-size: 0.7em !important;
 }
 .size05{
 	font-size: 0.5em !important;
+}
+.size03{
+	font-size: 0.3em !important;
 }
 .size02{
 	font-size: 0.2em !important;
@@ -304,7 +349,7 @@ height: 270px;
     height: 600px!important;
     }
 .blackBackground{
-    background: black;
+    background: black !important;
 }
 .whiteBackground{
     background: white;
@@ -874,6 +919,9 @@ body { font-family: sans-serif; }
 }
 
 @media screen and (max-width: 400px) {
+    .paddingVertical90{
+        padding: 0px 0px 0px 0px;
+    }
     .image-logo-responsive {
         height: 40px;
         width: 70%;

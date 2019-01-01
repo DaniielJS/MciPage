@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>AV Sound</title>
+</head>
+<body style="background-color: black">
+<img src="src/images/banner.png">
+</body>
+<script type="text/javascript">
+	function round (number, decimals){  if(Number.isFinite(number)){
+        var number = number.toString();
+        if(number.indexOf(".") > 0 ){
+            var parts = number.split(".");
+            var decimalsInNumber =  parts[1];
+            var shouldAddDecimal = false;
+            
+            if (decimalsInNumber.length <= decimals){
+                return Number(number).toFixed(decimals);
+            } else{            
+                for (var j = decimalsInNumber.length; (j > 0 && decimalsInNumber.length > decimals) ; j--) {                                
+                    var decimal = Number(decimalsInNumber.substr((j-1),j));             
+                    if (shouldAddDecimal) decimal = decimal + 1;                
+                    if (decimal >= 5) {shouldAddDecimal = true;}                    
+                    else { shouldAddDecimal = false;}                   
+ 
+                    decimalsInNumber = decimalsInNumber.substr(0,j-1);      
+                };
+                if(shouldAddDecimal){
+                    var finalDecimalResult = Number(decimalsInNumber);  
+                    finalDecimalResult = finalDecimalResult + 1;        
+                }
+ 
+                if(!finalDecimalResult) finalDecimalResult = decimalsInNumber;
+                var cdnAppend = "";
+                if(decimalsInNumber.startsWith("0")){
+                    for(var it = 0; it < decimalsInNumber.length; it ++){
+                        var cdn = decimalsInNumber.substr(it,1);
+                        if(cdn=="0")
+                            cdnAppend = cdnAppend + cdn;
+                        else
+                         break;
+                    }
+                }
+// si es 100 1000 o 10000
+				if(finalDecimalResult == 10 || finalDecimalResult == 100 || finalDecimalResult == 1000){
+					parts[0] = Number(parts[0]) +1;
+					finalDecimalResult = 0;
+				}
+                return Number(parts[0] + "." + cdnAppend + finalDecimalResult).toFixed(decimals);
+            }
+        } else{
+            return Number(number).toFixed(decimals);
+        }
+    } else {
+        return number;
+    }
+ }
+
+ function round1(number, decimals){
+ 	var number = number.toString();
+        if(number.indexOf(".") > 0 ){
+            var parts = number.split(".");
+            var decimalsInNumber =  parts[1];
+                        
+            if (decimalsInNumber.length <= decimals){
+                return Number(number).toFixed(decimals);
+            } else{            
+            	var arrayDecimals = decimalsInNumber.split("");            	
+
+            	for (var i = decimals; i > 0; i--) {
+            		if (Number(arrayDecimals[i]) >= 5) {
+            			arrayDecimals[i - 1] = Number(arrayDecimals[i - 1]) + 1;
+
+            			if(Number(arrayDecimals[i - 1]) == 10) arrayDecimals[i] = 0;
+            			if(Number(arrayDecimals[i - 1]) < 10) break;            				
+            		}else
+            			break;
+            	}
+            	if(Number(arrayDecimals[0]) == 10 ){
+            		parts[0] = Number(parts[0]) + 1;
+            		arrayDecimals[0] = 0;
+            	}
+            }
+         } else{
+            return Number(number).toFixed(decimals);
+        }
+
+
+         return parts[0] + "." + arrayDecimals.toString().replaceAll(',','').substr(0, decimals);
+ }
+</script>
+</html>

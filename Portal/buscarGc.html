@@ -24,9 +24,19 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+.float{
+  background: rgba(0,0,0,0.57);
+background: -moz-linear-gradient(left, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 8%, rgba(0,0,0,0.52) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.57)), color-stop(8%, rgba(0,0,0,0.57)), color-stop(100%, rgba(0,0,0,0.52)));
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 8%, rgba(0,0,0,0.52) 100%);
+background: -o-linear-gradient(left, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 8%, rgba(0,0,0,0.52) 100%);
+background: -ms-linear-gradient(left, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 8%, rgba(0,0,0,0.52) 100%);
+background: linear-gradient(to right, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 8%, rgba(0,0,0,0.52) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );}
 </style>
 <body ng-app="grupos" ng-controller="conexion">
       <!-- main page -->
+    <div class="float">
       <div class="container" >
           <div class="overflow-hidden">
               <div class="flex flex-center white">
@@ -34,11 +44,16 @@ body {
                   <section class="text-left">
                 <div class="slogan">
                   <div class="font-weight main-family row">
-                    <div class="col witheColor"> <p class="size05">GRUPOS DE</p><p class="highTide size17">Conexion</p></div>                    
+                    <div class="col witheColor"> <p class="size05 noMarginNoPadding">GRUPOS DE</p><p class="highTide size17">Conexion</p></div>                    
+                  </div>
+                  <div class="row noMarginNoPadding">
+                    <div class="col noMarginNoPadding">
+                      <a href="index.html"><span class="btn btn-o-white brigth">Ir a Inicio</span></a>
+                    </div>
                   </div>
                   <div class="font-weight main-family row">
                     <div class="col witheColor">
-                        <p class="witheColor size02">Hay un grupo de conexión cerca esperando por ti. </p>
+                        <p class="witheColor size03">Hay un grupo de conexión cerca esperando por ti. </p>
                     </div>
                   </div>
                   <div class="font-weight main-family row flex flex-center">
@@ -98,10 +113,12 @@ body {
         </div>
       </div>
     </section>
+  </div>
 </body>
 <script>
 var app = angular.module("grupos", []); 
 app.controller("conexion", function($scope) {
+  $scope.busquedaGrupo = "Arequipa";
     $scope.grupos = [["Arequipa","CINTHYA QUISPE","COOP. VICTOR ANDRES BELAUNDE F-5 YANAHUARA","JUEVES","5:00 p. m.",],
 ["Arequipa","LUIS CACERES & YESSY GUILLEN","AV. VENEZUELA # 306 2DO PISO – CERCADO","JUEVES","7:00 p. m.",],
 ["Arequipa","ROXANA CHAVEZ MELGARJE","REPUBLICA DE CHILE #216 ALTO SAN MARTIN – MNO MELGAR","JUEVES","6:30 p. m.",],
